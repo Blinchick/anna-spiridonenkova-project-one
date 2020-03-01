@@ -14,7 +14,7 @@
 <body>
 </body>
 <header>
-    <nav class="clearfix">
+    <nav>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -25,8 +25,7 @@
     <div class="sitename">
         <h1>Bikerland</h1>
     </div>
-
-    <aside class="clearfix">
+    <aside>
         <nav>
             <ul class="sidebar">
                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -40,46 +39,46 @@
 </header>
 
 <main>
-    <section class="home clearfix" id="home">
-        <div class="info">
-            <h2 class="wrapper">About us</h2>
-            <p class="wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nostrum incidunt! Atque
-                exercitationem
-                dolorem laboriosam ipsum nostrum? Impedit rem minus excepturi cum ea sint reiciendis officiis quia
-                aut
-                illo exercitationem a molestiae at repellendus commodi, delectus culpa!</p>
-            <div class="wrapper">
-                <button><a>Read more</a></button>
+    <section id="about" class="about">
+        <div class="clearfix">
+            <div class="about_us_post">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nostrum incidunt! Atque
+                    exercitationem
+                    dolorem laboriosam ipsum nostrum? Impedit rem minus excepturi cum ea sint reiciendis officiis quia
+                    aut
+                    illo exercitationem a molestiae at repellendus commodi, delectus culpa!</p>
+                <p class="button"><a href="about.html">Read more</a></p>
             </div>
-        </div>
-        <div class="info_pic">
-            <img src="./biker-land-assets/image-2.jpg"
-                alt="black and whit pic of a feet in runners on a bicycle's pedal">
-        </div>
+            <div class="about_us_pic">
+                <img src="./biker-land-assets/image-2.jpg"
+                    alt="black and whit pic of a feet in runners on a bicycle's pedal">
+            </div>
 
-        <div class="mission wrapper">
-            <h2 class="wrapper">Our mission</h2>
-            <p class="wrapper">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus natus corporis
-                perspiciatis
-                porro
-                ratione nemo hic recusandae quae molestiae quisquam non excepturi, debitis ducimus neque fugiat
-                laudantium
-                eum ullam asperiores a aut voluptatem, expedita temporibus. Ea.</p>
-            <div class="wrapper">
-                <button><a>Read more</a></button>
+            <div class="about_mission_pic">
+                <img src="./biker-land-assets/image-7.jpg" alt="cool black bicycle">
             </div>
-        </div>
-        <div class="mission_pic">
-            <img src="./biker-land-assets/image-7.jpg" alt="cool black bicycle">
+            <div class="about_mission_post">
+                <h2>Our mission</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus natus
+                    corporis
+                    perspiciatis
+                    porro
+                    ratione nemo hic recusandae quae molestiae quisquam non excepturi, debitis ducimus neque fugiat
+                    laudantium
+                    eum ullam asperiores a aut voluptatem, expedita temporibus. Ea.</p>
+                <p class="button"><a href="mission.html">Read more</a>
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="blog" id="blog">
+    <section id="blog" class="blog">
         <div class=" wrapper clearfix">
             <div class=blog_pic>
                 <img src="./biker-land-assets/image-6.jpg" alt="woman in pink on a bicycle">
             </div>
-            <div class="blog_article">
+            <div class="blog_post">
                 <h2>Meet Alissa</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi consequuntur architecto, expedita
                     numquam saepe tempore doloribus, ad aliquam adipisci exercitationem sequi maiores. Vel totam commodi
@@ -96,30 +95,65 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="links">
         <nav>
-            <ul class="clearfix">
-                <li><a href=""><i class="fas fa-bicycle"></i> Products</a></li>
-                <li><i><a href=""><i class="fas fa-users"></i> Community</a></i></li>
-                <li><a href=""><i class="fas fa-phone"></i> Reach Out</a></li>
+            <ul>
+                <li><a href="product.html"><i class="fas fa-bicycle" href="product.html"
+                            title="cool bicycles alert"></i>
+                        <h3>Products</h3>
+                    </a></li>
+                <li><a href="community.html"><i class="fas fa-users" href="product.html" title="we are awesome"></i>
+                        <h3>Community</h3>
+                    </a></li>
+                <li><a href="reachout.html"><i class="fas fa-phone" href="reachout.html"
+                            title="call us! text us! love us!"></i>
+                        <h3>Reach Out</h3>
+                    </a></li>
             </ul>
         </nav>
     </section>
 
-    <!-- <section class="aaa">
-        <h3>The Gram</h3>
-        <div>
-            <img src="./biker-land-assets/image-8.jpg" alt="">
+    <section class="gallery">
+        <div class="wrapper clearfix">
+            <h2>The Gram</h2>
+            <figure><img src="./biker-land-assets/image-8.jpg" alt="woman in a hemlet biking"></figure>
+            <figure><img src="./biker-land-assets/image-3.jpg" alt="pro biker passing few people"></figure>
+            <figure><img src="./biker-land-assets/image-4.jpg" alt="white bicycle parked by the wall"></figure>
         </div>
-        <div>
-            <img src="./biker-land-assets/image-3.jpg" alt="">
-        </div>
-        <div>
-            <img src="./biker-land-assets/" alt="">
-        </div>
-    </section> -->
+    </section>
 </main>
 
-</html>
+<footer id="contact" class="contact">
+    <div class="clearfix wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="address">
+            <h4>Contact</h4>
+            <p>info@email.com | 123 - 456 - 7890</p>
+            <p>some road, Toronto</p>
+            <p>A5A 5A5, Canada</p>
+        </div>
+        <div class="update">
+            <h4>Stay updated</h4>
+            <p>Subscribe to our newsletter to stay updated.</p>
+            <form action="">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="email address">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy 2019 HackerYou</p>
+    </div>
+</footer>
 
-<!-- add alts -->
+</body>
+
+</html>

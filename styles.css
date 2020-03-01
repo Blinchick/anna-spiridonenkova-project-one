@@ -1,6 +1,3 @@
-    /* Snippets start here */
-    /* change them as per class work */
-    
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
@@ -18,86 +15,96 @@ html {
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
-    width: 90%;
+    width: 100%;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
 
-h2 {
-    font-family: 'Pacifico', 'sans-serif';
-    font-weight: 400;
-    font-size: 4.2rem;
-    margin-top: 0;
-}
+/* End of snippets */
+
+/* universal styles are here */
 
 ul {
     padding: 0;
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h2 {
+    font-family: 'Pacifico', 'sans-serif';
+    font-weight: 400;
+    font-size: 4.2rem;
+    margin: 0;
+    color:  #1F2022;
+}
+
 p,
-button {
+input[type="email"] {
     font-family: 'Catamaran', 'sans-serif';
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 29px;
+    padding-bottom: 1rem;
+    color:  #1F2022;
 }
 
-button {
-    background-color: #1F2022;
-    border: none;
-    color: #F2A11C;
-    text-transform: uppercase;
-    padding: 1rem 3rem;
-}
-/* End of Snippets */
-/* DUPLICATES? DO WE NEED THEM ALL? CHECK */
-
-/* Header */
-
-header {
-    background-image: url(./biker-land-assets/image-1.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    margin: 0;
-
-    /* if positioning wont work - delte */
-
-    position: relative;
-}
-
-.menu {
-text-align: center;
-margin: 0;
-}
-
-.menu li {
-    padding: 2rem 2rem 3rem;
-    display: inline-block;
-    list-style: none;
-}
-
-.menu li a {
+a {
     text-decoration: none;
     font-family: 'Catamaran', 'sans-serif';
     font-weight: 400;
     font-size: 2rem;
-    color: #FFFFFF;
     line-height: 2rem;
 }
 
-.sitename {
-    text-align: center;
-    width: 100%;
-    position: absolute;
+.button a {
+    background-color: #1F2022;
+    text-transform: uppercase;
+    padding: 0.2rem 2.5rem;
+    color: #F2A11C;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 
+/* header starts here */
 
+header {
+    position: relative;
+    background-image: url(./biker-land-assets/image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    padding-top: 3rem;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+.sitename {
+    padding-top: 25rem;
+}
 
 h1 {
     text-align: center;
@@ -105,21 +112,19 @@ h1 {
     font-size: 13rem;
     font-weight: normal;
     color: #F2A11C;
-    padding: 11rem 10rem 10rem 12rem;
+    margin: 0;
 }
 
-aside nav {
+aside {
     position: absolute;
+    top: 0;
     right: 0;
-}
-
-aside ul {
-    padding: 150px 10px 0px 0px;
+    padding-top: 29rem;
+    padding-right: 5rem;
 }
 
 aside li {
-    list-style: none;
-    padding-top: 15px;
+    padding-top: 1rem;
 }
 
 aside i {
@@ -139,96 +144,218 @@ aside i:hover {
     color: #FFFFFF;
 }
 
-/* main starts here */
-
-/* first section aka home with two mirror articles */
-
-.home {
-    background-color: #000;
-}
-
-.home h2,
-.home p {
-    color:  #1F2022;;
-}
-
-.info, 
-.info_pic, 
-.mission, 
-.mission_pic {
-    float: left;
-    width: 50%;
-}
-
-.mission, 
-.mission_pic {
-    float: right;
-    width: 50%;
-}
-
-/* end of mirror section */
-
-/* .info, 
-.mission {
-    padding: 15rem 15rem;
-} */ 
-/* IT DOESN'T WORK WTF 
-calc??*/
-
-/* section with blog post starts here */
-
-.blog {
-   
-   background-color: #F4F4F4;
-}
-
-.blog_pic {
-    margin: 10rem auto;
-    float: left;
-    width: 26%;
-}
-
-.blog_article {
-    margin: 10rem auto;
-    float: left;
-    width: 74%;
-    padding-left: 5rem;
-}
-
-.blog_article h2 {
+.button a:hover {
+    background-color: #F2A11C;
     color: #1F2022;
 }
 
-.blog_article p {
-    color: #4A4A4A;
+.contact h3:hover {
+    color: #F4F4F4;
 }
 
-/* section ends */
+.contact i:hover {
+    color: #F2A11C;
+}
 
-/* your button is not alligned */
+input[type="submit"]:hover {
+    background-color: #4A4A4A;
+    color: #F2A11C;
+}
 
-/* section with pictures */
+/* end of hovers */
 
-.gallery {
+/* main part starts here */
+/* section with two mirror sections */
+
+.about {
+    background-color: #000;
+}
+
+.about_us_post,
+.about_us_pic,
+.about_mission_post,
+.about_mission_pic {
+    float: left;
+    width: 50%;
+    height: 65vh;
+}
+
+.about_us_post,
+.about_mission_post {
+    padding: 15rem 10rem 0;
+}
+
+.about_us_pic img,
+.about_mission_pic img {
+    height: 100%;
+}
+
+/* section ends here */
+
+/* section with blog post */
+
+.blog {
+    background-color: #F4F4F4;
+    height: 50vh;
+}
+
+.blog div:first-child {
+    position: relative;
+}
+
+.blog_pic {
+    float: left;
+    width: 30%;
+    height: 40rem;
+    padding: 5rem 1rem 5rem 0;
+}
+
+.blog_pic img {
+    height: 100%;
+}
+
+.blog_post {
+    float: left;
+    width: 80%;
+    height: 50vh;
+    padding: 5rem 0rem 5rem 8rem;
+    right: 0;
+    position: absolute;
+}
+
+/* end of blog section */
+
+/* contact section starts here*/
+
+.links {
     background-image: url(./biker-land-assets/image-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    background-position: center;
+    height: 50vh;
 }
 
-    .gallery ul {
-    padding-left: calc(50% - 8rem);
-    border: 2px red solid;
-    size: 50rem;
-}
-
-.gallery li {
-    list-style: none;
-    float: left;
-}
-
-.gallery a {
-    text-decoration: none;
+.links ul {
     text-align: center;
 }
 
+.links li {
+    display: inline-block;
+    padding: 15rem 5rem 0;
+}
+
+.links i {
+    color: #FFFFFF;
+    font-size: 5rem
+}
+
+.links h3 {
+    color: #F2A11C;
+    font-weight: normal;
+    font-family: 'Catamaran', 'sans-serif';
+}
+
+/* end of contact section */
+/* gram section */
+
+.gallery {
+    background-color: #000;
+}
+
+.gallery h2 {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.gallery figure {
+    text-align: center;
+    float: left;
+    width: calc(33% - 4rem);
+    margin: 2rem 2rem 10rem;
+}
+
+/* end of gram section */
+/* footer starts here */
+
+footer {
+    background-color: #1F2022;
+}
+
+footer .menu {
+    padding-top: 10rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: #F4F4F4;
+}
+
+footer h4 {
+    color: #F2A11C;
+    font-family: 'Pacifico', 'sans-serif';
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+footer div:nth-child(1) {
+    padding-bottom: 10rem;
+}
+
+.address {
+    float: left;
+    width: 50%;
+    padding-top: 2rem;
+}
+
+.update {
+    float: right;
+    width: 50%;
+    padding-top: 2rem;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+}
+
+
+form {
+    display: inline;
+    position: relative;
+}
+input[type="email"] {
+    height: 4rem;
+    width: 70%;
+    padding: 0rem 1rem;
+}
+
+input[type="submit"] {
+    height: 4rem;
+    margin-top: 1rem;
+    width: 30%;
+    background-color: #F2A11C;
+    color: #1F2022;
+    margin: 0;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Catamaran', 'sans-serif';
+}
+
+.copyright {
+    background-color: #000;
+    padding: 1rem;
+}
+.copyright p {
+    color: #4A4A4A;
+    font-size: 16px;
+}
+
+
+/* end of fotter */
+/* End of everything */
+/* THE END */
