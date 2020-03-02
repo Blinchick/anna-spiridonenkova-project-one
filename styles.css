@@ -69,6 +69,7 @@ i.fa-bars {
     top: 25px;
     right: 0;
     font-size: 5rem;
+    padding-right: 2rem;
     width: 100px;
     color: #F4F4F4;
     text-align: right;
@@ -245,8 +246,7 @@ input[type="submit"]:hover {
 .blog-post {
     float: left;
     width: 80%;
-    height: 50vh;
-    padding: 5rem 0rem 5rem 8rem;
+    padding: 5rem 0rem 0rem 8rem;
     right: 0;
     position: absolute;
 }
@@ -407,8 +407,9 @@ input[type="submit"] {
     .blog-post {
         float: none;
         position: static;
-        padding: 0;
         width: 100%;
+        padding-left: 0;
+        padding-top: 0;
     }
     
     .blog-post h2,
@@ -443,37 +444,32 @@ input[type="submit"] {
     i.fa-bars {
         visibility: visible;
     }
-
-    .links li {
-        display: block;
-        padding: 3rem 5rem 0;
-    }
-
+    
     footer div:nth-child(1) {
         padding: 5rem 0;
     }
-
+    
     .hidden-pic {
         display: none;
     }
-
+    
     .gallery figure {
         width: calc(50% - 2rem);
         margin: 2rem 1rem 5rem;
     }
-
+    
     .address,
     .update {
         float: none;
         width: 100%;
         text-align: center;
     }
-
+    
     input[type="email"],
     input[type="submit"] {
         width: 100%;
     }
-
+    
     input[type="submit"] {
         position: static;
         margin-top: 1rem;
@@ -484,13 +480,18 @@ input[type="submit"] {
     h1 {
         font-size: 10rem;
     }
-
+    
     h2 {
         font-size: 4rem;
     }
+    
+    .links {
+        height: 75vh;
+    }
 
-    .blog {
-    height: 140vh;
+    .links li {
+        display: block;
+        padding: 3rem 5rem 0;
     }
 }
 
