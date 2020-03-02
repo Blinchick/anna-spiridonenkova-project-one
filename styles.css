@@ -15,7 +15,7 @@ html {
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -62,6 +62,17 @@ a {
     font-weight: 400;
     font-size: 2rem;
     line-height: 2rem;
+}
+
+i.fa-bars {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 5rem;
+    width: 100px;
+    color: #F4F4F4;
+    text-align: right;
+    visibility: hidden;
 }
 
 .button a {
@@ -144,6 +155,10 @@ aside i:hover {
     color: #FFFFFF;
 }
 
+header i:hover {
+    color: #F2A11C;
+}
+
 .button a:hover {
     background-color: #F2A11C;
     color: #1F2022;
@@ -157,6 +172,14 @@ aside i:hover {
     color: #F2A11C;
 }
 
+.links i:hover {
+    color: #F2A11C;
+}
+
+.links h3:hover {
+    color: #F4F4F4;
+}
+
 input[type="submit"]:hover {
     background-color: #4A4A4A;
     color: #F2A11C;
@@ -165,28 +188,33 @@ input[type="submit"]:hover {
 /* end of hovers */
 
 /* main part starts here */
-/* section with two mirror sections */
+/* section with two mirror articles */
 
 .about {
     background-color: #000;
 }
 
-.about_us_post,
-.about_us_pic,
-.about_mission_post,
-.about_mission_pic {
+.about-us-post,
+.about-us-pic {
+    float: right;
+    width: 50%;
+    height: 60vh;
+}
+
+.about-mission-post,
+.about-mission-pic {
     float: left;
     width: 50%;
     height: 65vh;
 }
 
-.about_us_post,
-.about_mission_post {
-    padding: 15rem 10rem 0;
+.about-us-post,
+.about-mission-post {
+    padding: 10rem 10rem;
 }
 
-.about_us_pic img,
-.about_mission_pic img {
+.about-us-pic img,
+.about-mission-pic img {
     height: 100%;
 }
 
@@ -203,18 +231,18 @@ input[type="submit"]:hover {
     position: relative;
 }
 
-.blog_pic {
+.blog-pic {
     float: left;
     width: 30%;
     height: 40rem;
     padding: 5rem 1rem 5rem 0;
 }
 
-.blog_pic img {
+.blog-pic img {
     height: 100%;
 }
 
-.blog_post {
+.blog-post {
     float: left;
     width: 80%;
     height: 50vh;
@@ -232,7 +260,7 @@ input[type="submit"]:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 55vh;
 }
 
 .links ul {
@@ -264,7 +292,7 @@ input[type="submit"]:hover {
 
 .gallery h2 {
     text-align: center;
-    padding: 5rem 0;
+    padding: 3rem;
 }
 
 .gallery figure {
@@ -281,10 +309,6 @@ footer {
     background-color: #1F2022;
 }
 
-footer .menu {
-    padding-top: 10rem;
-}
-
 footer p {
     margin: 0;
     padding: 0;
@@ -299,13 +323,14 @@ footer h4 {
 }
 
 footer div:nth-child(1) {
-    padding-bottom: 10rem;
+    padding: 10rem 0;
 }
 
 .address {
     float: left;
     width: 50%;
     padding-top: 2rem;
+    padding-left: 1rem;
 }
 
 .update {
@@ -314,16 +339,20 @@ footer div:nth-child(1) {
     padding-top: 2rem;
 }
 
+.update p {
+    margin-bottom: 1rem;
+}
+
 .copyright {
     clear: both;
     text-align: center;
 }
 
-
 form {
     display: inline;
     position: relative;
 }
+
 input[type="email"] {
     height: 4rem;
     width: 70%;
@@ -333,7 +362,7 @@ input[type="email"] {
 input[type="submit"] {
     height: 4rem;
     margin-top: 1rem;
-    width: 30%;
+    width: 40%;
     background-color: #F2A11C;
     color: #1F2022;
     margin: 0;
@@ -355,7 +384,125 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-
 /* end of fotter */
+
+/* media starts here */
+
+@media (max-width: 1300px){
+    .blog {
+    height: 100%;
+    }
+
+    .blog div:first-child{
+        position: static;
+    }
+
+    .blog-pic {
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .blog-post {
+        float: none;
+        position: static;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .blog-post h2,
+    .blog-post .button{ 
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px){
+    .about-us-post,
+    .about-us-pic,
+    .about-mission-post,
+    .about-mission-pic {
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .about-us-post,
+    .about-mission-post  {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 800px){
+    header nav,
+    header aside {
+        display: none;
+    }
+
+    i.fa-bars {
+        visibility: visible;
+    }
+
+    .links li {
+        display: block;
+        padding: 3rem 5rem 0;
+    }
+
+    footer div:nth-child(1) {
+        padding: 5rem 0;
+    }
+
+    .hidden-pic {
+        display: none;
+    }
+
+    .gallery figure {
+        width: calc(50% - 2rem);
+        margin: 2rem 1rem 5rem;
+    }
+
+    .address,
+    .update {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        position: static;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 10rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .blog {
+    height: 140vh;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    .menu a {
+        padding: .8rem;
+    }
+}
+
 /* End of everything */
 /* THE END */
