@@ -1,1 +1,1 @@
-Fully responsive website created in HTML and CSS using floats.
+PSD conversion. Fully responsive website created in HTML and CSS using floats.
